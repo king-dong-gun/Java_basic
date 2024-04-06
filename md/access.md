@@ -77,14 +77,10 @@ public class AccessInnerMain {
 }
 ```
 > 실행결과
-```
-publicMethod 호출 >> 1
-defualtMethod 호출  >> 2
-내부 호출
-publicMethod 호출 >> 300
-defualtMethod 호출  >> 200
-privateMethod 호출 >> 0
-```
+![이너메인출력결과.png](..%2Fimage%2F%EC%9D%B4%EB%84%88%EB%A9%94%EC%9D%B8%EC%B6%9C%EB%A0%A5%EA%B2%B0%EA%B3%BC.png)
+
+
+
 > 결론
 > 1. `private` 다른 패키지 접근 불가
 > 2. `innerAccess()`메소드 내부 패키지 접근 가능!
@@ -116,13 +112,10 @@ public class AccessOuterMain {
 }
 ```
 > 실행결과
-```
-publicMethod 호출 >> 1
-내부 호출
-publicMethod 호출 >> 300
-defualtMethod 호출  >> 200
-privateMethod 호출 >> 0
-```
+![아우터메인출력결과.png](..%2Fimage%2F%EC%95%84%EC%9A%B0%ED%84%B0%EB%A9%94%EC%9D%B8%EC%B6%9C%EB%A0%A5%EA%B2%B0%EA%B3%BC.png)
+
+
+
 > 결론
 > 1. `private`, `default` 다른 패키지 접근 불가
 > 2. `innerAccess()`메소드 외부 패키지 접근 가능!

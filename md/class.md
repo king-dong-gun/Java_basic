@@ -85,15 +85,7 @@ public class ClassStart3 {
 
 ##### 1. 변수 선언
 
-
-
-
-
-
-
-
-
-
+![클래스 변수 선언.png](..%2Fimage%2F%ED%81%B4%EB%9E%98%EC%8A%A4%20%EB%B3%80%EC%88%98%20%EC%84%A0%EC%96%B8.png)
 
 
 - Student 타입을 받을 수 있는 변수를 선언
@@ -101,12 +93,7 @@ public class ClassStart3 {
 
 ##### 2. 객체 생성
 
-
-
-
-
-![클래스의 객체 생성](..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fvar%2Ffolders%2F44%2F0l87xs4136n5n95018b2kvrc0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_cH51JL%2F%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-04-06%20%EC%98%A4%EC%A0%84%2011.44.20.png)
-
+![클래스 객체 생성.png](..%2Fimage%2F%ED%81%B4%EB%9E%98%EC%8A%A4%20%EA%B0%9D%EC%B2%B4%20%EC%83%9D%EC%84%B1.png)
 
 
 
@@ -120,13 +107,7 @@ public class ClassStart3 {
 ##### 3. 참조값 보관
 
 
-
-
-
-![스크린샷 2024-04-06 오후 2.10.45.png](..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fvar%2Ffolders%2F44%2F0l87xs4136n5n95018b2kvrc0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_flHuzL%2F%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-04-06%20%EC%98%A4%ED%9B%84%202.10.45.png)
-
-
-
+![클래스 참조값 보관.png](..%2Fimage%2F%ED%81%B4%EB%9E%98%EC%8A%A4%20%EC%B0%B8%EC%A1%B0%EA%B0%92%20%EB%B3%B4%EA%B4%80.png)
 
 
 
@@ -151,15 +132,7 @@ student1 = x001; //3. 최종 결과
 - 각각 참조값이 다르므로 구분할 수 있다
 
 
-
-
-
-![스크린샷 2024-04-06 오후 2.31.25.png](..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fvar%2Ffolders%2F44%2F0l87xs4136n5n95018b2kvrc0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_ASoYap%2F%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-04-06%20%EC%98%A4%ED%9B%84%202.31.25.png)
-
-
-
-
-
+![클래스 참조값.png](..%2Fimage%2F%ED%81%B4%EB%9E%98%EC%8A%A4%20%EC%B0%B8%EC%A1%B0%EA%B0%92.png)
 
 
 
@@ -182,11 +155,7 @@ student1.grade = 90;
 
 
 
-
-![스크린샷 2024-04-06 오후 2.34.46.png](..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fvar%2Ffolders%2F44%2F0l87xs4136n5n95018b2kvrc0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_3vHgm0%2F%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-04-06%20%EC%98%A4%ED%9B%84%202.34.46.png)
-
-
-
+![객체 참조 그림.png](..%2Fimage%2F%EA%B0%9D%EC%B2%B4%20%EC%B0%B8%EC%A1%B0%20%EA%B7%B8%EB%A6%BC.png)
 
 
 
@@ -203,26 +172,14 @@ x001.name = "학생1"         //2.변수에 있는 참조값을 통해 실제 �
 
 
 
+![클래스 객체 값대입 전.png](..%2Fimage%2F%ED%81%B4%EB%9E%98%EC%8A%A4%20%EA%B0%9D%EC%B2%B4%20%EA%B0%92%EB%8C%80%EC%9E%85%20%EC%A0%84.png)
 
 
 
-![스크린샷 2024-04-06 오후 2.46.24.png](..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fvar%2Ffolders%2F44%2F0l87xs4136n5n95018b2kvrc0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_B1OYWG%2F%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-04-06%20%EC%98%A4%ED%9B%84%202.46.24.png)
+##### `student1.name = "학생1` 코드 실행 후
 
 
-
-
-
-
-##### `student1.name = "학생1` 코드 실행 후!
-
-
-
-
-
-
-[스크린샷 2024-04-06 오후 2.46.46.png](..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fvar%2Ffolders%2F44%2F0l87xs4136n5n95018b2kvrc0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_m6lVjQ%2F%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-04-06%20%EC%98%A4%ED%9B%84%202.46.46.png)
-
-
+![클래스 객체값 대입후.png](..%2Fimage%2F%ED%81%B4%EB%9E%98%EC%8A%A4%20%EA%B0%9D%EC%B2%B4%EA%B0%92%20%EB%8C%80%EC%9E%85%ED%9B%84.png)
 
 
 
