@@ -78,6 +78,8 @@ public class AccessInnerMain {
 ```
 > 실행결과
 
+
+
 ![이너메인출력결과](https://github.com/king-dong-gun/Java_basic/assets/160683545/96ebf49b-a61d-4b4c-ba28-6edc6ec76a7d)
 
 
@@ -113,6 +115,10 @@ public class AccessOuterMain {
 }
 ```
 > 실행결과
+
+
+
+
 ![아우터메인출력결과](https://github.com/king-dong-gun/Java_basic/assets/160683545/388db5a0-3b14-4792-bc03-4c5e9b0bf7da)
 
 
@@ -185,7 +191,9 @@ public class PublicClassOuterMain {
 
 #### 입출금 관리 프로그램
 [BankAccount](https://github.com/king-dong-gun/Java_basic/blob/master/src/access/encapsulation/BankAccount.java)
+
 [BankAccountMain](https://github.com/king-dong-gun/Java_basic/blob/master/src/access/encapsulation/BankAccountMain.java)
+
 **private**
 - `balance` 데이터 필드는 외부 직접 노출 X, `BankAccount`가 제공하는 메소드를 통해서만 접근
 - `isAmountValid` 입력 금액을 검증하는 기능은 내부에서만 필요한 기능!! >> `private` 사용

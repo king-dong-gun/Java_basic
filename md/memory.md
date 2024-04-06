@@ -1,6 +1,10 @@
 ## 자바 메모리 구조
 
 
+
+
+
+
 ![자바메모리구조비유.png](..%2Fimage%2F%EC%9E%90%EB%B0%94%EB%A9%94%EB%AA%A8%EB%A6%AC%EA%B5%AC%EC%A1%B0%EB%B9%84%EC%9C%A0.png)
 
 
@@ -12,7 +16,15 @@
     - 배열도 힙영역!!
 
 
+
+
+
+
 ![자바 메모리구조 실제.png](..%2Fimage%2F%EC%9E%90%EB%B0%94%20%EB%A9%94%EB%AA%A8%EB%A6%AC%EA%B5%AC%EC%A1%B0%20%EC%8B%A4%EC%A0%9C.png)
+
+
+
+
 
 
 
@@ -26,7 +38,18 @@
 
 ### 메소드 코드는 메소드 영역에
 
+
+
+
+
+
 ![메소드영역.png](..%2Fimage%2F%EB%A9%94%EC%86%8C%EB%93%9C%EC%98%81%EC%97%AD.png)
+
+
+
+
+
+
 
 
 - 자바에서 특정 클래스로 100개의 인스턴스를 생성하면 힙 영역에 100개의 인스턴스가 생김,
@@ -38,13 +61,22 @@
 ### 스택 구조
 
 
+
+
+
 ![스택구조선입.png](..%2Fimage%2F%EC%8A%A4%ED%83%9D%EA%B5%AC%EC%A1%B0%EC%84%A0%EC%9E%85.png)
 
 
 
 
 
+
+
+
 ![스택구조선출.png](..%2Fimage%2F%EC%8A%A4%ED%83%9D%EA%B5%AC%EC%A1%B0%EC%84%A0%EC%B6%9C.png)
+
+
+
 
 
 
@@ -74,7 +106,16 @@ public class JavaMemoryMain01 {
 ```
 > 출력결과
 
+
+
+
+
+
 ![스택 실행결과.png](..%2Fimage%2F%EC%8A%A4%ED%83%9D%20%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC.png)
+
+
+
+
 
 
 
@@ -135,7 +176,13 @@ public class Data {
 > 출력결과
 
 
+
+
+
 ![스택힙출력결과.png](..%2Fimage%2F%EC%8A%A4%ED%83%9D%ED%9E%99%EC%B6%9C%EB%A0%A5%EA%B2%B0%EA%B3%BC.png)
+
+
+
 
 
 #### 정리
