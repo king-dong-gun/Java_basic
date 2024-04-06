@@ -4,7 +4,7 @@
 2. 클래스 도입
 3. 객체 사용
 4. 클래스, 객체, 인스턴스 정리
-5. 문제 풀이
+5. 예제 풀이
 
 - 시작
 - 리펙토링
@@ -85,7 +85,7 @@ public class ClassStart3 {
 
 ##### 1. 변수 선언
 
-![클래스 변수 선언.png](..%2Fimage%2F%ED%81%B4%EB%9E%98%EC%8A%A4%20%EB%B3%80%EC%88%98%20%EC%84%A0%EC%96%B8.png)
+![클래스 변수 선언](https://github.com/king-dong-gun/Java_basic/assets/160683545/e510057d-667f-4b69-ad7f-1c554c0b5a31)
 
 
 - Student 타입을 받을 수 있는 변수를 선언
@@ -93,9 +93,7 @@ public class ClassStart3 {
 
 ##### 2. 객체 생성
 
-![클래스 객체 생성.png](..%2Fimage%2F%ED%81%B4%EB%9E%98%EC%8A%A4%20%EA%B0%9D%EC%B2%B4%20%EC%83%9D%EC%84%B1.png)
-
-
+![클래스 객체 생성](https://github.com/king-dong-gun/Java_basic/assets/160683545/2fdfc20a-f3a2-4778-bcf9-3393ca5f65ac)
 
 
 
@@ -106,8 +104,7 @@ public class ClassStart3 {
 
 ##### 3. 참조값 보관
 
-
-![클래스 참조값 보관.png](..%2Fimage%2F%ED%81%B4%EB%9E%98%EC%8A%A4%20%EC%B0%B8%EC%A1%B0%EA%B0%92%20%EB%B3%B4%EA%B4%80.png)
+![클래스 참조값 보관](https://github.com/king-dong-gun/Java_basic/assets/160683545/1ae827c5-b9c0-4511-bd3d-a0a4745ae3f3)
 
 
 
@@ -132,7 +129,7 @@ student1 = x001; //3. 최종 결과
 - 각각 참조값이 다르므로 구분할 수 있다
 
 
-![클래스 참조값.png](..%2Fimage%2F%ED%81%B4%EB%9E%98%EC%8A%A4%20%EC%B0%B8%EC%A1%B0%EA%B0%92.png)
+![클래스 참조값](https://github.com/king-dong-gun/Java_basic/assets/160683545/496756f8-5269-4a45-bcc1-db7349ff4e92)
 
 
 
@@ -155,7 +152,7 @@ student1.grade = 90;
 
 
 
-![객체 참조 그림.png](..%2Fimage%2F%EA%B0%9D%EC%B2%B4%20%EC%B0%B8%EC%A1%B0%20%EA%B7%B8%EB%A6%BC.png)
+![객체 참조 그림](https://github.com/king-dong-gun/Java_basic/assets/160683545/1351f3c8-ea5a-477e-9a4f-5022074d5b2a)
 
 
 
@@ -172,14 +169,14 @@ x001.name = "학생1"         //2.변수에 있는 참조값을 통해 실제 �
 
 
 
-![클래스 객체 값대입 전.png](..%2Fimage%2F%ED%81%B4%EB%9E%98%EC%8A%A4%20%EA%B0%9D%EC%B2%B4%20%EA%B0%92%EB%8C%80%EC%9E%85%20%EC%A0%84.png)
+![클래스 객체 값대입 전](https://github.com/king-dong-gun/Java_basic/assets/160683545/57b82aba-9929-4061-afea-e5deeaa6b33b)
 
 
 
 ##### `student1.name = "학생1` 코드 실행 후
 
 
-![클래스 객체값 대입후.png](..%2Fimage%2F%ED%81%B4%EB%9E%98%EC%8A%A4%20%EA%B0%9D%EC%B2%B4%EA%B0%92%20%EB%8C%80%EC%9E%85%ED%9B%84.png)
+![클래스 객체값 대입후](https://github.com/king-dong-gun/Java_basic/assets/160683545/239ba798-e019-4f58-82c0-de1b9a06e6ab)
 
 
 
@@ -202,16 +199,16 @@ x001.name = "학생1"         //2.변수에 있는 참조값을 통해 실제 �
 2. 주로 객체가 어떤 클래스에 속해 있는지 강조할 때 사용한다
    - `student1`의 객체는 `Student`클래스의 인스턴스다!!!
 
-### 5. 문제 풀이
+### 5. 예제 풀이
 
 #### 영화 리뷰 관리1
-[MovieReviw]
-[MovieReviwMain01]
+[MovieReviw](https://github.com/king-dong-gun/Java_basic/blob/master/src/classStart/ex/exam01/MovieReview.java)
+[MovieReviwMain01](https://github.com/king-dong-gun/Java_basic/blob/master/src/classStart/ex/exam01/MovieReviewMain.java)
 
 
 #### 상품 주문 시스템 개발
-[ProdictOrder]
-[ProdictOrderMain]
+[ProdictOrder](https://github.com/king-dong-gun/Java_basic/blob/master/src/classStart/ex/exam02/ProductOrder.java)
+[ProdictOrderMain](https://github.com/king-dong-gun/Java_basic/blob/master/src/classStart/ex/exam02/ProductOrderMain.java)
 
 
 
