@@ -5,7 +5,7 @@
 
 
 
-![자바메모리구조비유.png](..%2Fimage%2F%EC%9E%90%EB%B0%94%EB%A9%94%EB%AA%A8%EB%A6%AC%EA%B5%AC%EC%A1%B0%EB%B9%84%EC%9C%A0.png)
+![자바메모리구조비유](https://github.com/king-dong-gun/Java_basic/assets/160683545/7920f4c1-fb3e-4556-a27b-b9a16e8acd3c)
 
 
 
@@ -20,7 +20,7 @@
 
 
 
-![자바 메모리구조 실제.png](..%2Fimage%2F%EC%9E%90%EB%B0%94%20%EB%A9%94%EB%AA%A8%EB%A6%AC%EA%B5%AC%EC%A1%B0%20%EC%8B%A4%EC%A0%9C.png)
+![자바 메모리구조 실제](https://github.com/king-dong-gun/Java_basic/assets/160683545/94b0482d-cb88-4777-883d-4fb6287d17a2)
 
 
 
@@ -41,9 +41,7 @@
 
 
 
-
-
-![메소드영역.png](..%2Fimage%2F%EB%A9%94%EC%86%8C%EB%93%9C%EC%98%81%EC%97%AD.png)
+![메소드영역](https://github.com/king-dong-gun/Java_basic/assets/160683545/c42accd2-066d-48d5-8f36-00d4d951b140)
 
 
 
@@ -63,9 +61,7 @@
 
 
 
-
-![스택구조선입.png](..%2Fimage%2F%EC%8A%A4%ED%83%9D%EA%B5%AC%EC%A1%B0%EC%84%A0%EC%9E%85.png)
-
+![스택구조선입](https://github.com/king-dong-gun/Java_basic/assets/160683545/f02d70c8-e331-4203-a3aa-a634719d2a51)
 
 
 
@@ -73,7 +69,8 @@
 
 
 
-![스택구조선출.png](..%2Fimage%2F%EC%8A%A4%ED%83%9D%EA%B5%AC%EC%A1%B0%EC%84%A0%EC%B6%9C.png)
+
+![스택구조선출](https://github.com/king-dong-gun/Java_basic/assets/160683545/0a81714c-3108-425c-b550-3d7a9cd57796)
 
 
 
@@ -110,16 +107,14 @@ public class JavaMemoryMain01 {
 
 
 
-
-![스택 실행결과.png](..%2Fimage%2F%EC%8A%A4%ED%83%9D%20%EC%8B%A4%ED%96%89%EA%B2%B0%EA%B3%BC.png)
-
+![스택 실행결과](https://github.com/king-dong-gun/Java_basic/assets/160683545/073ce738-5dbe-491d-b0ca-8d3ecf659d7b)
 
 
 
 
 
 
-![큐자료구조.png](..%2Fimage%2F%ED%81%90%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0.png)
+![큐자료구조](https://github.com/king-dong-gun/Java_basic/assets/160683545/dd560df1-4f8b-453b-a90f-bf343e3a31eb)
 
 
 
@@ -178,8 +173,7 @@ public class Data {
 
 
 
-
-![스택힙출력결과.png](..%2Fimage%2F%EC%8A%A4%ED%83%9D%ED%9E%99%EC%B6%9C%EB%A0%A5%EA%B2%B0%EA%B3%BC.png)
+![스택힙출력결과](https://github.com/king-dong-gun/Java_basic/assets/160683545/aaa257e9-a21e-4730-a8c6-7eaac41ec0bd)
 
 
 
