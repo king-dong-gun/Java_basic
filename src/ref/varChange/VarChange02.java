@@ -1,6 +1,6 @@
 package ref.varChange;
 
-import ref.Data;
+import ref.method.Data;
 
 public class VarChange02 {
     public VarChange02() {

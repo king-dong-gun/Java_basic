@@ -1,4 +1,4 @@
-package ref;
+package ref.method;
 
 public class Data {
     public int value;

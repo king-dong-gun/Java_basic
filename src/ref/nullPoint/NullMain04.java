@@ -1,7 +1,7 @@
 package ref.nullPoint;
 
-import ref.BigData;
-import ref.Data;
+import ref.method.BigData;
+import ref.method.Data;
 
 public class NullMain04 {
     public NullMain04() {

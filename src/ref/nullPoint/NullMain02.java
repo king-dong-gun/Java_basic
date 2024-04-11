@@ -1,6 +1,6 @@
 package ref.nullPoint;
 
-import ref.Data;
+import ref.method.Data;
 
 public class NullMain02 {
     public NullMain02() {
