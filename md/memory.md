@@ -177,8 +177,126 @@ public class Data {
 
 
 
+#### static
+> `static` 키워드는 주로 맴버 변수와 메소드에 사용된다.
+```java
+ package static1;
+
+public class Data3 {
+    public String name;
+    public static int count; //static
+
+    public Data3(String name) {
+        this.name = name;
+        count++;
+    }
+}
+```
+- `static int count` 부분에서 변수 타입앞에 `static` 키워드가 붙어있다.
+- 이렇게 맴버변수에 `static`을 붙이면 **static 변수**, **정적 변수**, **클래스 변수**라고 한다.
+
+```java
+ package static1;
+
+public class DataCountMain3 {
+    public static void main(String[] args) {
+        Data3 data1 = new Data3("A");
+        System.out.println("A count=" + Data3.count);
+        Data3 data2 = new Data3("B");
+        System.out.println("B count=" + Data3.count);
+        Data3 data3 = new Data3("C");
+        System.out.println("C count=" + Data3.count);
+    }
+}
+```
+- 코드를 보면 `count` 정적 변수에 접근하는 방법이 조금 특이한데 `Data3.count`와 같이 클래스명에 .(dot)을 사용한다.
+  - 마치 클래스에 직접 접근하는 것 처럼....?
+
+> 실행결과
+
+
+
+![static출력결과](https://github.com/king-dong-gun/Java_basic/assets/160683545/e98b4b8d-1eaf-4224-b73e-0c965bcf0ab0)
+
+
+
+
+![static01](https://github.com/king-dong-gun/Java_basic/assets/160683545/ea801306-b2e0-46a2-aeee-c39d5494e44a)
+
+
+
+- `static`이 붙은 맴버변수는 메소드 영역에서 관리한다.
+  - `static`이 붙은 맴버 변수 `count`는 인스턴스 영역에 생성되지 않고, 메소드 영역에서 변수를 관리한다.
+- `Data03("A") 인스턴스를 생성하면 생성자가 호출된다.
+- 생성자에는 `count++` 코드가 있다. `count`는 `static`이 붙은 정적 변수이다.
+  - 정적 변수는 인스턴스 영역이 아니라 메소드 영역에서 관리한다. 따라서 메소드 영역에 있는 `count`의 값이 하나 증가한다.
+
+
+![static02](https://github.com/king-dong-gun/Java_basic/assets/160683545/19a0fa48-bc34-4265-8af6-a5d8cf01d39d)
+
+
+
+- `Data03("B")` 인스턴스를 생성하면 생성자가 호출된다.
+- `count++` 코드에서 `count`는 `static`이 붙은 정적 변수이다.
+  - 메소드 영역에 있는 `count` 변수의 값이 하나 증가된다.
+
+
+![static03](https://github.com/king-dong-gun/Java_basic/assets/160683545/6c721666-cf25-4afb-bdd3-7f2dd6a9108c)
+
+
+
+- 코드가 모두 실행되면 최종적으로 메소드 영역에 있는 `count` 변수의 값은 3이 된다.
+- **`static` 변수를 사용하면 공용 변수를 사용해서 편리하게 문제를 해결할 수 있다.**
+
+> `static` 변수는 클래스인 붕어빵 틀이 특별히 관리하는 변수!! 붕어빵 틀은 1개이므로 
+> 클래스 변수도 하나만 존재한다. 반면에 인스턴스인 붕어빵은 인스턴스의 수 만큼 변수가 존재한다. 
+
+
+##### 용어 정리
+> 맴버변수(필드)의 종류
+
+- **인스턴스 변수**: `static`이 붙지 않은 맴버 변수.
+  - `static`이 붙지 않은 맴버변수는 인스턴스를 생성해야 사용할 수 있고, 인스턴스에 소속되어 있다.
+  - 인스턴스 변수는 인스턴스를 만들 때 마다 새로 만들어진다.
+
+- **클래스 변수**
+  - 클래스 변수, 정적 변수, static 변수 등 으로 부른다. **용어 모두 사용하니 주의!!**
+  - 클래스 변수는 자바 프로그램을 시작할 때 딱 1개만 만들어진다.
+  - `static`이 붙은 맴버 변수는 인스턴스와 무관하게 클래스에 바로 접근해서 사용할 수 있고, 클래스 자체에 소속되어 있다.
+
+##### 정적 변수 접근 법
+> DataCountMain03 - 추가
+```java
+        // 추가
+// 인스턴스를 통한 접근
+Data03 data04 = new Data03("D");
+        System.out.
+
+println(data04.count);
+
+// 클래스를 통한 접근
+        System.out.
+
+println(Data03.count);
+```
+
+![static접근법](https://github.com/king-dong-gun/Java_basic/assets/160683545/f5d05041-1944-4e5b-a12e-270b1f6338e4)
+
+
+> 둘의 차이는 없다 >> 결과적으로 정적변수에 둘다 접근
+
+> 인스턴스를 통한 접근 `data4.count`
+- 정적변수의 경우 인스턴스를 통한 접근을 추천하지 않는다.
+  - 코드를 읽을 때 마치 인스턴스 변수에 접근하는 것 처럼 오해할 수 있기 때문!!!
+
+> 클래스를 통한 접근 `Data3.count`
+- 정적변수는 클래스에서 공용으로 관리하기 때문에 클래스를 통해서 접근하는 것이 더 명확하다.
+  - 정적변수에 접근할 때는 클래스를 통해서 접근하자!!
+
+
 
 
 #### 정리
+
 - 지역 변수는 스택영역, 객체(인스턴스)는 힙 영역에 관리된다.
 
