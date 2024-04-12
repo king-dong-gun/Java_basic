@@ -484,6 +484,9 @@ public class Super2Main {
 ```
 
 > 실행결과
+
+
+
 ![super생성자출력](https://github.com/king-dong-gun/Java_basic/assets/160683545/da054688-db90-4180-b882-2a65d64a3cc8)
 
 - ClassA -> ClassB -> ClassC 순서로 실행된다. 생성자의 실행 순서가 최상위 부모부터 실행되어 하나씩 내려오는 것이다.
