@@ -1,4 +1,4 @@
-package static1;
+package static1.sec01;
 
 public class Data01 {
     public String name;

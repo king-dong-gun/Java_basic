@@ -1,4 +1,4 @@
-package static1;
+package static1.sec03;
 
 public class DataCountMain03 {
     public static void main(String[] args) {

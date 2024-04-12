@@ -1,4 +1,6 @@
-package static1;
+package static1.sec02;
+
+import static1.Counter;
 
 public class DataCountMain02 {
     public static void main(String[] args) {

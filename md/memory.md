@@ -30,7 +30,7 @@
 
 1. **매소드 영역**: 프로그램을 실행하는데 필요한 공통 데이터 관리
    - 클래스 정보: 실행코드, 필드, 메소드, 생성자 코드 등 모든 실행 코드가 존재
-   - `static` 영역: 
+   - `static` 영역
 2. **스택 영역**: 자바를 실행시, 하나의 실행 스택이 생성됨 각 스텍 프레임은 지역변수, 중간 연산 결과, 메소드 호출등을 포함
     - 스택 프레임: 메소드를 호출할 때 마다 하나의 스택 프레임이 쌓이고, 메소드가 종료되면 스택 프레임이 제거
 3. **힙 영역**: 객체(인스턴스)와 배열이 생성되는 영역
@@ -279,11 +279,11 @@ println(data04.count);
 
 println(Data03.count);
 ```
-
+> 출력결과
 ![static접근법](https://github.com/king-dong-gun/Java_basic/assets/160683545/f5d05041-1944-4e5b-a12e-270b1f6338e4)
 
 
-> 둘의 차이는 없다 >> 결과적으로 정적변수에 둘다 접근
+- 둘의 차이는 없다 >> 결과적으로 정적변수에 둘다 접근
 
 > 인스턴스를 통한 접근 `data4.count`
 - 정적변수의 경우 인스턴스를 통한 접근을 추천하지 않는다.
@@ -293,6 +293,143 @@ println(Data03.count);
 - 정적변수는 클래스에서 공용으로 관리하기 때문에 클래스를 통해서 접근하는 것이 더 명확하다.
   - 정적변수에 접근할 때는 클래스를 통해서 접근하자!!
 
+##### static 메소드
+
+```java
+package static1.sec05;
+
+public class DecoUtil02 {
+    public static String deco(String str) {
+        String result = "*" + str + "*";
+        return result;
+    }
+}
+
+```
+
+```java
+package static1.sec05;
+
+public class DecoMain02 {
+    public static void main(String[] args) {
+        String str = "hello java";
+        String deco = DecoUtil02.deco(str);
+
+        System.out.println("before >> " + str);
+        System.out.println("after >> " + deco);
+    }
+}
+
+```
+> 출력결과
+> 
+![스태틱메소드호출](https://github.com/king-dong-gun/Java_basic/assets/160683545/f58d16c3-1dae-40e4-b750-1e436c3cc595)
+
+
+- 메소드 앞에 `static`이 붙어 있어 정적 메소드를 생성했다.
+- `static`이 붙은 정적 메소드는 객체 생성 없이 **클래스명 + .(dot) + 메소드명**으로 바로 호출이 가능하다.
+    - `static`이 붙지않은 메소드는 인스턴스를 생성해야 호출할 수 있다.
+
+> 하지만 정적 메소드를 언제나 사용할 수 있는 것은 아니다.
+
+##### static 메소드 사용법
+- `static`메소드는 `static`만 사용할 수 있다.
+  - 클래스 내부의 기능을 사용할 때, 정적 메소드는 `static`이 붙은 **정적 메소드나 정적변수만 사용할 수 있다.**
+  - 클래스 내부의 기능을 사용할 때, 정적 메소드는 인스턴스 변수나, 인스턴스 메소드를 사용할 수 없다.
+- 반대로 모든 곳에서 `static`을 호출할 수 있다.
+  - 정적 메소드는 공용 기능이라, 접근 제어자만 맞춰준다면 클래스를 통해서 호출이 가능하다.
+
+```java
+package static1.sec06;
+
+public class DecoData {
+    private int instanceValue;
+    private static int staticValue;
+
+    public static void staticCall() {
+//        instanceValue++;    // 인스턴스 변수 접근, complie error
+//        instanceMethod();    // 인스턴스 메소드 접근, complie error
+
+        staticValue++;  // 정적 변수 접근
+        staticMethod(); // 정적 메소드 접근
+    }
+
+    public void intanceCall() {
+        instanceValue++;    // 인스턴스 변수 접근
+        instanceMethod();   // 인스턴스 메소드 접근
+
+        staticValue++;      // static 변수 접근
+        staticMethod();     // static 메소드 접근
+    }
+
+    private void instanceMethod() {
+        System.out.println("instanceValue >> " + instanceValue);
+    }
+
+    private static void staticMethod() {
+        System.out.println("staticValue >> " + staticValue);
+    }
+
+}
+
+```
+```java
+package static1.sec06;
+
+public class DecoDataMain {
+    public static void main(String[] args) {
+        System.out.println("1. 정적호출");
+        DecoData.staticCall();
+
+        System.out.println("2. 인스턴스 호출1");
+        DecoData decoData1 = new DecoData();
+        decoData1.intanceCall();
+
+        System.out.println("3. 인스턴스 호출2");
+        DecoData decoData2 = new DecoData();
+        decoData2.intanceCall();
+    }
+}
+
+```
+> 출력결과
+
+
+
+![스태틱메소드호출2](https://github.com/king-dong-gun/Java_basic/assets/160683545/d3946cd2-be51-4afd-98b1-3ebb2f299ff0)
+
+
+
+
+- 접근 제어자를 활용해 필드를 포함한 외부에서 직접 필요하지 않은 기능을 막아 놓았다.
+  - `instanceValue` -> 인스턴스 변수
+  - `staticValue` -> 정적변수(클래스 변수)
+  - `instanceMethod()` -> 인스턴스 메소드
+  - `staticMethod()` -> 정적 메소드(클래스 메소드)
+
+> `static`메소드는 `static`만 사용할 수 있다. `static`이 없는 인스턴스 변수나 인스턴스 메소드에 접근하면 **컴파일 오류**가 발생
+
+> 인스턴스 메소드는 모든 곳에서 공용인 `static` 호출이 가능하다. 따라서 정적변수, 정적 메소드에 접근할 수 있다.
+
+##### 정적 메소드 활용
+- 정적 메소드는 객체 생성이 필요없이 메소드의 호출만으로 필요한 기능을 수행할 때 주로 사용한다.
+
+#### 문제풀이
+##### 구매한 자동차 수
+
+[CarMain]()
+[Car]()
+
+![문제풀이1](https://github.com/king-dong-gun/Java_basic/assets/160683545/5ba9fbc7-2da7-4e67-a849-c72a72acb76c)
+
+
+
+##### 수학 유틸리티 클래스
+> MathArrayUtils 객체를 생성하지 않고 작성
+[MathArrayUtilsMain]()
+[MathArrayUtils]()
+
+![문제풀이2](https://github.com/king-dong-gun/Java_basic/assets/160683545/b4efa7a8-0291-4ae1-9a57-b3ac8d6b25e6)
 
 
 
