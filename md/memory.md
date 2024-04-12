@@ -417,8 +417,8 @@ public class DecoDataMain {
 #### 문제풀이
 ##### 구매한 자동차 수
 
-[CarMain]()
-[Car]()
+[CarMain](https://github.com/king-dong-gun/Java_basic/blob/master/src/static1/ex/test01/CarMain.java)
+[Car](https://github.com/king-dong-gun/Java_basic/blob/master/src/static1/ex/test01/Car.java)
 
 ![문제풀이1](https://github.com/king-dong-gun/Java_basic/assets/160683545/5ba9fbc7-2da7-4e67-a849-c72a72acb76c)
 
@@ -426,8 +426,8 @@ public class DecoDataMain {
 
 ##### 수학 유틸리티 클래스
 > MathArrayUtils 객체를 생성하지 않고 작성
-[MathArrayUtilsMain]()
-[MathArrayUtils]()
+[MathArrayUtilsMain](https://github.com/king-dong-gun/Java_basic/blob/master/src/static1/ex/test02/MathArrayUtilsMain.java)
+[MathArrayUtils](https://github.com/king-dong-gun/Java_basic/blob/master/src/static1/ex/test02/MathArrayUtils.java)
 
 ![문제풀이2](https://github.com/king-dong-gun/Java_basic/assets/160683545/b4efa7a8-0291-4ae1-9a57-b3ac8d6b25e6)
 
@@ -435,5 +435,21 @@ public class DecoDataMain {
 
 #### 정리
 
-- 지역 변수는 스택영역, 객체(인스턴스)는 힙 영역에 관리된다.
+- JVM의 메모리 구조는 크게 3가지로 이루어져 있다.
+  > 힙 영역
+    - new 키워드로 인스턴스를 생성 할 때, 힙 영역에는 생성된 객체가 저장, 스택영역에서 생성된 객체에 대한 주소값(레퍼런스)이 저장된다.
+  > 스택 영역
+    - 힙 영역에서 생성된 데이터의 참조값이 할당
+  > 스태틱 영역
+    - **Class 정보, Static 변수, 생성자, 메소드**와 같은 것들을 저장한다
+    - 스태틱 영역에 있는 것은 어디서든 접근이 가능하다.
+
+- Java 변수의 종료
+  - 클래스 변수 
+  - 인스턴스 변수 
+  > 클래스, 인스턴스 변수는 필드라고 한다.
+  - 지역변수
+  > 메소드 내부에 있는 변수를 지역변수라고 한다.
+  - 매개변수
+
 

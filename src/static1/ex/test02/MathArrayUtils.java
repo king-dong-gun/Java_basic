@@ -19,13 +19,13 @@ public class MathArrayUtils {
     }
 
     public static int min(int[] values) {
-        int minValue = values[0];
-        for (int value : values) {
-            if (value < minValue) {
+        int minValue = values[0];       // 최소값을 value 배열 0번에서 가져옴
+        for (int value : values) {      // for문으로 배열을 하나씩 비교
+            if (value < minValue) {     // value가 minValue 보다 작으면 min = value
                 minValue = value;
             }
         }
-        return minValue;
+        return minValue;                // 최소값 리턴
     }
 
     public static int max(int[] values) {
